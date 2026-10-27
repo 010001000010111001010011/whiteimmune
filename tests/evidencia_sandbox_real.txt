@@ -1,0 +1,10 @@
+== Pruebas del sandbox real ==
+
+[PASS] (a) benigno corre y da su salida -> 'HOLA_DESDE_SANDBOX\n4\n'
+[PASS] (b) red muerta dentro del sandbox -> 'RED_MUERTA: OSError\n'
+[PASS] (c) puntaje alto rechazado sin ejecutar -> puntaje 100, error: 'puntaje estático alto: el sandbox real se niega a ejecutar'
+[PASS] (d) timeout corta el bucle infinito -> timeout=True, duró 5.0s
+[PASS] (e) entrada en solo lectura, salida temporal funciona -> "{'/etc/wim_prueba_fs': 'ESCRITO', '/wim_entrada/mal.txt': 'BLOQUEADO'}"
+[PASS] (e) lo escrito en /etc dentro NO persistió en el equipo -> /etc/wim_prueba_fs ausente en el host
+
+Todas las pruebas pasaron.

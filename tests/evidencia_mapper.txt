@@ -1,0 +1,12 @@
+== Pruebas del Ecosystem Mapper (simulado) ==
+
+[PASS] NORMAL (sin cluster)
+        nodos=120, aristas=300
+        métricas={'densidad': 0.133, 'sincronia': 0.0, 'crecimiento': 0.0, 'replicacion': 0.0, 'migracion': 0.6}
+        puntaje=10.0/100 (umbral 60) -> sin alarma: tráfico disperso
+[PASS] OCULTO (con cluster coordinado)
+        nodos=155, aristas=444
+        métricas={'densidad': 0.943, 'sincronia': 0.417, 'crecimiento': 1.0, 'replicacion': 1.0, 'migracion': 0.798}
+        puntaje=78.8/100 (umbral 60) -> ALERTA: patrón emergente coordinado
+
+Ambos escenarios detectados correctamente.
