@@ -1,0 +1,3 @@
+# WhiteImmune no tiene dependencias externas.
+# Solo biblioteca estándar de Python (3.8+).
+# Este archivo existe para dejarlo explícito.
